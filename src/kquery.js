@@ -80,3 +80,5 @@ import each from "./each.js";
 
   window.$ = $;
 })(window);
+
+export default window.$;
