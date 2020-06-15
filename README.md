@@ -1,6 +1,6 @@
 # kquery
 
-In this project, we are going to learn how to build our own lightweight version of jQuery.
+This is a jQuery clone I built because I was curious about how it all worked under the hood.
 
 ## How to use
 
