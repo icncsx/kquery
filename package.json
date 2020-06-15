@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "DH Kim",
+    "email": "icncsx@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/icncsx/kquery/issues"
+  },
+  "type": "module",
+  "deprecated": false,
+  "description": "jQuery clone",
+  "keywords": [
+    "modules",
+    "stdlib",
+    "util"
+  ],
+  "license": "MIT",
+  "main": "src/kquery.js",
+  "name": "@icncsx/kquery",
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icncsx/kquery.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "version": "1.0.0",
+  "devDependencies": {}
+}
