@@ -1,5 +1,5 @@
 export default function () {
-  return this.each(function () {
-    this.style.display = "none";
+  return this.each(function (el) {
+    el.style.display = "none";
   });
 }
