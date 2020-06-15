@@ -16,30 +16,21 @@ import each from "./each.js";
 
 (function (window) {
   function $(selector) {
-    // on first run this is the global/window object
     if (!(this instanceof $)) {
       return new $(selector);
     }
-
-    // # of elements in NodeList
     this.length = 0;
 
-    // NodeList
     this.nodes = [];
 
     if (typeof selector === "string") {
       this.selector = selector;
 
-      // Create $el, e.g. $(<h1>Hello, world!</h1)
       if (selector[0] === "<" && selector[selector.length - 1] === ">") {
         this.nodes = [createNode(selector)];
-        // Query $el, e.g. $(#root)
       } else {
         this.nodes = [].slice.call(document.querySelectorAll(selector));
       }
-
-      // HTMLElements and NodeList
-      // Select $el, e.g. $(HTMLElement)
     } else if (
       selector instanceof HTMLElement ||
       selector instanceof NodeList ||
@@ -89,5 +80,3 @@ import each from "./each.js";
 
   window.$ = $;
 })(window);
-
-export default $;
