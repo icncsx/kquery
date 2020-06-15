@@ -26,7 +26,7 @@
     "url": "git+https://github.com/icncsx/kquery.git"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"No test specified\""
