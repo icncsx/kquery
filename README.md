@@ -1,10 +1,10 @@
 # kquery
 
-In this project, we are going to learn how to build our own lightweight version of jQuery.
+This is a jQuery clone I built to learn how to create a lightweight DOM manipulation library such as jQuery. 
 
 ## How to use
 
-Just like how you would use jQuery! These are methods which are currently supported.
+Just like how you would use jQuery! These are the methods which are currently supported.
 
 - [addClass](https://api.jquery.com/addClass/)
 - [append](https://api.jquery.com/append/)
@@ -22,7 +22,17 @@ Just like how you would use jQuery! These are methods which are currently suppor
 
 ## Demo
 
-```js
-const $listElements = $("div");
-$listElements.hide(); // POOF!
+```html
+<script type="module" src="./src/kquery.js"></script>
+
+  <script>
+    window.onload = function () {
+      const $listElements = $("li");
+      $listElements.hide(); // POOF!
+    };
+  </script>
 ```
+
+## API
+
+Methods and their behavior mimic those which exist in [jQuery](https://jquery.com/). I purposely referenced their [API](https://api.jquery.com/) docs to create a priority list of methods I wanted to implement for my own jQuery type library.
