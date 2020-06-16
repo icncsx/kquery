@@ -23,14 +23,15 @@ Just like how you would use jQuery! These are the methods which are currently su
 ## Demo
 
 ```html
+<!-- near the bottom of your HTML file -->
 <script type="module" src="./src/kquery.js"></script>
 
-  <script>
-    window.onload = function () {
-      const $listElements = $("li");
-      $listElements.hide(); // POOF!
-    };
-  </script>
+<script>
+window.onload = function () {
+    const $listElements = $("li");
+    $listElements.hide(); // POOF!
+};
+</script>
 ```
 
 ## API
